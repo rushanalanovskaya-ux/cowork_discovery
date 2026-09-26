@@ -1,0 +1,67 @@
+{
+  "synthetic": true,
+  "input": [
+    {
+      "row_id": "r1",
+      "sku": "A",
+      "qty": 2
+    },
+    {
+      "row_id": "r2",
+      "sku": "A",
+      "qty": 3
+    },
+    {
+      "row_id": "r3",
+      "sku": "B",
+      "qty": 1
+    },
+    {
+      "row_id": "r4",
+      "sku": "X",
+      "qty": 4
+    }
+  ],
+  "reference": [
+    {
+      "sku": "A",
+      "unit_price": 10
+    },
+    {
+      "sku": "B",
+      "unit_price": 20
+    }
+  ],
+  "rule": "Join by sku. Unknown sku is rejected, never silently lost. Aggregate known rows by sku.",
+  "expected": {
+    "groups": [
+      {
+        "sku": "A",
+        "qty": 5,
+        "amount": 50,
+        "source_rows": [
+          "r1",
+          "r2"
+        ]
+      },
+      {
+        "sku": "B",
+        "qty": 1,
+        "amount": 20,
+        "source_rows": [
+          "r3"
+        ]
+      }
+    ],
+    "rejected": [
+      {
+        "row_id": "r4",
+        "reason": "unknown_sku"
+      }
+    ],
+    "input_rows": 4,
+    "processed_rows": 3,
+    "rejected_rows": 1,
+    "total_amount": 70
+  }
+}

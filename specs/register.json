@@ -1,0 +1,293 @@
+[
+  {
+    "id": "PDLC-001",
+    "title": "Полнота и сверка табличного результата",
+    "revision": 1,
+    "path": "specs/PDLC-001.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-49",
+      "MVP-32"
+    ],
+    "claim_ids": [
+      "CLM-006"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Q-06: получить пример дефекта и эталон",
+      "Q-09: согласовать профиль XLSX/CSV, размер и точность",
+      "Утвердить правила join/агрегации и поведение при ошибке"
+    ],
+    "dependencies": [
+      "Профиль файлов MVP-07",
+      "Согласованные бизнес-правила расчёта"
+    ]
+  },
+  {
+    "id": "PDLC-002",
+    "title": "Явное покрытие документов и предупреждение об усечении",
+    "revision": 1,
+    "path": "specs/PDLC-002.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-53",
+      "MVP-07",
+      "MVP-42"
+    ],
+    "claim_ids": [
+      "CLM-007"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Q-07: получить первичный бенчмарк",
+      "Q-09: лимиты и поддерживаемые форматы",
+      "Согласовать UX неполного результата"
+    ],
+    "dependencies": [
+      "Идентификатор и версия файла",
+      "MVP-07 и MVP-42: профиль загрузки"
+    ]
+  },
+  {
+    "id": "PDLC-003",
+    "title": "Проверяемые ссылки, происхождение и актуальность",
+    "revision": 1,
+    "path": "specs/PDLC-003.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-17",
+      "MVP-47",
+      "MVP-48",
+      "MVP-57"
+    ],
+    "claim_ids": [
+      "CLM-004",
+      "CLM-005",
+      "CLM-008"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Согласовать единицу существенного утверждения и разметку",
+      "Q-08: доступ и сроки отзыва",
+      "Согласовать стабильные locators и правила актуальности"
+    ],
+    "dependencies": [
+      "PDLC-002: версия и покрытие",
+      "PDLC-004: доступ"
+    ]
+  },
+  {
+    "id": "PDLC-004",
+    "title": "Права доступа и подтверждение внешних действий",
+    "revision": 1,
+    "path": "specs/PDLC-004.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-06",
+      "MVP-29",
+      "MVP-46",
+      "MVP-60",
+      "MVP-61"
+    ],
+    "claim_ids": [
+      "CLM-005",
+      "CLM-008"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Q-08: утвердить матрицу и сроки отзыва",
+      "Определить срок/область подтверждения и хранение аудита",
+      "Q-02: проверить существующую реализацию"
+    ],
+    "dependencies": [
+      "Роли и авторизация",
+      "Коннектор выбранного сценария",
+      "PDLC-006: попытки и идемпотентность"
+    ]
+  },
+  {
+    "id": "PDLC-005",
+    "title": "Приёмка результата и измерение продуктовой ценности",
+    "revision": 1,
+    "path": "specs/PDLC-005.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-27",
+      "MVP-51"
+    ],
+    "claim_ids": [
+      "CLM-001",
+      "CLM-010",
+      "CLM-011"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Q-10: сверить текущие события",
+      "Утвердить знаменатели, timezone и окно зрелости",
+      "Утвердить классификацию полной переделки и политику хранения"
+    ],
+    "dependencies": [
+      "PDLC-006: task/attempt IDs",
+      "Версия артефакта и UX приёмки"
+    ]
+  },
+  {
+    "id": "PDLC-006",
+    "title": "Надёжное выполнение и безопасное восстановление",
+    "revision": 1,
+    "path": "specs/PDLC-006.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-01",
+      "MVP-04",
+      "MVP-05",
+      "MVP-30"
+    ],
+    "claim_ids": [
+      "CLM-014"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Q-02: проверить уже реализованные COCO-задачи",
+      "Q-09: согласовать timeout и профиль нагрузки",
+      "Утвердить контракт отмены и сверки внешнего эффекта"
+    ],
+    "dependencies": [
+      "Хранилище состояния и артефактов",
+      "Контракты коннекторов"
+    ]
+  },
+  {
+    "id": "PDLC-007",
+    "title": "Пилот проверки договора по правилам компании",
+    "revision": 1,
+    "path": "specs/PDLC-007.md",
+    "status": "shaping",
+    "mvp_ids": [
+      "MVP-55",
+      "MVP-56",
+      "MVP-57"
+    ],
+    "claim_ids": [
+      "CLM-009"
+    ],
+    "owner": null,
+    "decision_ref": null,
+    "sdd_url": null,
+    "sdd_mapping_ref": null,
+    "estimate_ref": null,
+    "qa_plan_ref": null,
+    "ux_ref": null,
+    "metrics_ref": "knowledge/metrics.md",
+    "rollout_ref": null,
+    "security_required": true,
+    "approvals": {
+      "product": null,
+      "engineering": null,
+      "qa": null,
+      "security": null
+    },
+    "blockers": [
+      "Q-07: получить первичные требования и эталоны",
+      "Выбрать тип договора, правила и владельца приёмки",
+      "Q-08: разрешённый контур данных",
+      "Согласовать пороги и размер выборки"
+    ],
+    "dependencies": [
+      "PDLC-002",
+      "PDLC-003",
+      "PDLC-004",
+      "PDLC-005"
+    ]
+  }
+]

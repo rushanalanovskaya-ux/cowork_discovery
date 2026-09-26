@@ -1,0 +1,20 @@
+{
+  "synthetic": true,
+  "cohort": "10 distinct eligible tasks; mature cohort; no test tasks",
+  "started": 10,
+  "completed": 8,
+  "failed": 1,
+  "cancelled": 1,
+  "accepted_as_is": 3,
+  "accepted_after_partial_edits": 2,
+  "accepted_after_full_rework": 1,
+  "rejected": 1,
+  "unknown": 1,
+  "expected": {
+    "completion_rate": 0.8,
+    "acceptance_rate": 0.75,
+    "acceptance_without_full_rework": 0.625,
+    "unknown_share_completed": 0.125
+  },
+  "note": "This is an independent expected example, not actual product performance."
+}
